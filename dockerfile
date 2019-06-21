@@ -1,6 +1,7 @@
- FROM php:5.6-apache 
+FROM php:5.6-apache 
  
-RUN apt-get update
+
+ RUN apt-get update
  
 RUN a2enmod rewrite 
 COPY myproj/ /var/www/html/ 
